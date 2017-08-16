@@ -1,0 +1,54 @@
+/* styles in src/style directory are applied to the whole page */
+html body {
+  background-color: #ECEFF1;
+}
+
+a {
+  color: #03A9F4;
+}
+
+main {
+  text-align: center;
+  .main-logo {
+    margin: auto 30%;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.progressive-table {
+  background-color: #FFF;
+  width: 90%;
+  .header {
+    font-size: 14px;
+    color: #3F51B5;
+    font-weight: bold;
+  }
+  .body {
+    .row {
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      transition: background-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      > div {
+       padding: 16px 8px;
+       font-size: 12px;
+       color: rgba(0, 0, 0, 0.67);
+       font-weight: 400;
+      }
+    }
+    .row:hover {
+      background-color: #E8EAF6;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<main layout="column" layout-align="center center">
+  <md-card flex="30">
+    <!-- Images (and assets) are parsed and loaded from within the public directory -->
+    <div class="main-logo">
+      <img src="/img/logo.png" class="md-card-image md-padding" alt="angular logo">
+    </div>
+    <md-card-content>
+      <h2 class="md-primary">Hello from AngularJS!</h2>
+      <p class="md-title">Sample app</p>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button class="md-primary md-raised">start</md-button>
+    </md-card-actions>
+  </md-card>
+  <div class="md-margin progressive-table" md-whiteframe="2">
+    <div layout="row">
+      <div class="md-padding header" flex="{{i.size}}" ng-repeat="i in app.header track by $index">{{i.value}}</div>
+    </div>
+    <md-divider></md-divider>
+    <div class="body" flex>
+      <div class="row" ng-repeat="b in app.rows track by $index" layout="row">
+        <div flex="15">{{b.date}}</div>
+        <div flex="15">{{b.id}}</div>
+        <div flex="10">{{b.submitter}}</div>
+        <div flex="25">{{b.supplier}}</div>
+        <div flex="20">{{b.total}}</div>
+        <div flex="10">{{b.request}}</div>
+        <md-button aria-label="button-label" class="md-accent md-icon-button">
+          <md-icon class="md-accent material-icons">keyboard_arrow_down</md-icon>
+        </md-button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer layout="row" layout-align="center end">
+  <a ng-href="{{app.url}}">Webpack Angular Starter</a>
+</footer>

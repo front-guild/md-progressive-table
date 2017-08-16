@@ -1,0 +1,25 @@
+{
+    "parserOptions": {
+      "ecmaFeatures": {
+        "arrowFunctions": true,
+        "classes": true,
+        "generators": true,
+        "modules": true,
+        "superInFunctions": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "amd": true,
+      "es6": true,
+      "node": true,
+      "jasmine": true
+    },
+    "globals": {
+      "arguments": true,
+      "window": true,
+      "angular": true
+    },
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended"
+  }
